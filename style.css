@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 100vh;
+}
+
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.nav ul li{
+    margin: 0px 30px;
+}
+
+
+.nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+
+.nav ul li a:hover{
+    border-bottom:2px solid rgb(185, 196, 37);
+    letter-spacing: 2px;
+}
+
+
+
+header .content{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+ 
+    height: 70%;
+   
+
+}
+
+
+header .content p{
+    padding: 20px 0;
+}
+
+header .content h1{
+    font-size: 40px;
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+/* mohem to make background light */
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(7, 1, 1, 0.322);
+}
+
+header *{
+    z-index: 1;
+}
+
+
+/* mohem */
+
+
+
+
+
+
+
+
+
+header .content h1:hover{
+    letter-spacing: 3px;
+}
+
+.btn{
+   background-color: rgb(230, 176, 76) ;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 30px;
+   font-size: 18px;
+   font-weight: bold;
+   outline: none;
+   transition: 1s ease-in-out;
+   
+  
+}
+
+
+.btn:hover{
+    color: rgb(230, 176, 76);
+    border: 2px solid rgb(230, 176, 76);
+    background-color: transparent;
+  
+}
+
+
+
+header .content p{
+    margin: 20px 0;font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+
+header .content h1 span{
+    color: rgb(216, 230, 29);
+}
+
+
+.btn:hover{
+    border-bottom: 2px solid orange;
+    transition: 1s;
+   
+}
+
+header{
+    background-image: url(img/home_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* about css */
+
+
+#about .container .title{
+    text-align: center;
+}
+
+
+#about .container .title h1{
+    font-size: 50px;
+    color: #383848;
+    transition: 1s ease-in-out;
+}
+
+
+#about .container .title h1:hover{
+    letter-spacing: 3px;
+}
+
+
+#about .container .title p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #383848;
+    margin: 20px 0px;
+}
+
+.container{
+   
+    max-width: 1100px;
+    margin: auto;
+ 
+}
+
+
+#about{
+    height: 100vh;
+    margin-top: 50px;
+   
+    
+}
+
+.container .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+
+.container .about-content #gigi{
+    margin-right: 40px;
+}
+
+.container .about-content #gigi p{
+    font-size: 17px;
+    line-height: 30px;
+   
+}
+
+.container .about-content #gigi a
+{
+    background-color: #383848;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: 1s ease-in-out;
+    font-weight: bold;
+
+}
+
+
+.container .about-content #gigi a:hover{
+    border: 2px solid #383848;
+    background-color: transparent;
+    color: #383848;
+   
+}
+
+
+
+/* about end */
+
+
+
+
+/* offer css */
+
+
+#offer{
+   height: auto;
+   display: flex;
+   justify-content: center;
+   background-image: url(img/offer-background.jpg);
+}
+
+
+#offer .title{
+    text-align: center;
+
+}
+
+
+#offer .container .title h1{
+    font-size: 60px;
+    color: #e3ff42;
+    transition: 1s ease-in-out;
+}
+
+
+#offer .container .title h1:hover{
+    letter-spacing: 3px ;
+}
+
+#offer .container .title p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+
+#offer .container .offer-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* width: 1100px;
+    margin: auto; */
+   
+}
+
+
+.offer-items #fofo{
+    margin-top: 40px;
+   
+}
+
+
+#offer .container .offer-items h3{
+    color:#e3ff42;
+    font-size: 19px;
+    margin-bottom: 10px;
+
+}
+
+#offer .container .offer-items p{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+#offer .container .offer-items p span{
+    color: orange;
+    font-size: 20px;
+}
+
+
+#offer .container .offer-items p del{
+    color: #ffffff79;
+}
+/* offer end css */
+
+
+
+
+
+
+
+
+
+/* menu start css */
+
+
+#menu{
+    margin-top: 70px;
+}
+
+
+#menu .container .title{
+    text-align: center;
+}
+
+
+#menu .container .title h1{
+    font-size: 60px;
+    transition: 1s ease-in-out;
+  
+}
+
+#menu .container .title h1:hover{
+    letter-spacing: 3px;
+}
+
+
+#menu .container .title p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #383848;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+}
+
+
+
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items h1{
+    border-bottom: 2px solid #38384815;
+
+}
+
+#menu .menu-item .menu-items span{
+    color: #e6810f;
+  
+}
+
+.menu-items img{
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px 10px 10px 0px;
+}
+
+
+#menu .bt{
+    background-color: #383848;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    margin-top: 50px;
+    transition: 1s ease-in-out;
+    margin-bottom: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+
+#menu .bt:hover{
+    background-color: transparent;
+    color: #383848;
+    letter-spacing: 3px;
+}
+
+#menu{
+    text-align: center;
+}
+
+
+/* menu end css */
+
+
+
+
+
+
+/* daytime start css */
+
+#daytime{
+   text-align: center;
+    background-image: url(img/daytime_bg.jpeg);
+    height:auto;
+
+}
+
+
+
+#daytime::before{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background-color: #ff1616;
+}
+
+
+
+.daytime-items{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+
+.daytime-items .daytime-item{
+    margin: 40px 0px;
+}
+
+
+.daytime-items .daytime-item img{
+    margin-bottom: 20px;
+}
+
+
+
+.daytime-items .daytime-item h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #383848;
+}
+
+
+.daytime-items .daytime-item p{
+    color: #383848;
+    margin-top: 10px;
+}
+/* daytime end css */
+
+
+
+
+
+/* galerry start */
+#gallery{
+    background-image: url(img/offer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    opacity: 0.5;
+}
+
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+
+
+.img-gallery{
+    text-align: center;
+}
+
+#gallery .container{
+    text-align: center;
+}
+
+#gallery .container h2{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 50px;
+    transition: 1s ease-in-out;
+  
+
+}
+
+
+#gallery .container h2:hover{
+    letter-spacing: 3px;
+}
+
+
+/* galerry start */
+
+
+
+/* contact */
+
+
+.contact-info div{
+    margin: 20px;
+}
+
+.contact-info h3{
+    margin-bottom: 10px;
+    color: #383848;
+}
+
+
+
+.contact-info i{
+    margin:6px 7px;
+    color: #815f14;
+}
+
+
+.contact-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.contact-content .contact-info{
+    width: 50%;
+}
+
+div a i{
+    font-size: 40px;
+    transition: 1s ease-in-out;
+}
+
+
+div a i:hover{
+    color: #e3ff42;
+}
+
+
+form{
+    width: 50%;
+}
+
+
+form input,textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background-color: #e2e0db;
+    padding: 10px 0px;
+    transition: 1s ease-in-out;
+
+}
+
+
+textarea:hover{
+    background-color: #f5f5f5;
+}
+
+
+input:hover{
+    background-color: #383848;
+
+}
